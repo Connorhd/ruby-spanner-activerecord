@@ -9,6 +9,7 @@ class CreateTableWithDefaultValue < ActiveRecord::Migration[6.0]
     create_table :singers do |t|
       t.string :name, null: false, default: "no name"
       t.integer :age, null: false, default: 0
+      t.boolean :active, null: false, default: true
     end
   end
 end
